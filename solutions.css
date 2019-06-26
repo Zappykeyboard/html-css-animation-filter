@@ -1,5 +1,6 @@
 /*eserzio 1*/
-.ex-1-square{
+
+.ex-1-square {
   transition: background 3s;
 }
 
@@ -8,8 +9,9 @@
 }
 
 /*es 2*/
-.ex-2-square{
- transition: width 3s;
+
+.ex-2-square {
+  transition: width 3s;
 }
 
 .ex-2-square:active {
@@ -17,7 +19,8 @@
 }
 
 /*es 3*/
-.ex-3-square{
+
+.ex-3-square {
   transition: border-radius 3s;
 }
 
@@ -26,7 +29,8 @@
 }
 
 /*es 4*/
-.ex-4-square{
+
+.ex-4-square {
   transition: background 1s;
 }
 
@@ -36,78 +40,157 @@
 
 /* es 5 */
 
-.ex-5-square{
-  transition: all 2s 
+.ex-5-square {
+  transition: all 2s
 }
 
 .ex-5-square:hover {
-  width: 100px;
-  height: 100px;
-  margin: 0;
+  transform: scale(1.5, 1.5)
 }
 
 .ex-5-square:active {
-  width: 30px;
-  height: 30px;
-  margin: 35px;
+  transform: scale(0.33, 0.33)
 }
 
 /*es 6*/
-.ex-6-img:hover{
+
+.ex-6-img:hover {
   filter: grayscale(1)
 }
 
 /*es 7*/
-.ex-7-img{
+
+.ex-7-img {
   transition: filter 1s;
 }
 
-.ex-7-img:hover{
+.ex-7-img:hover {
   filter: sepia(0.8) grayscale(0.2)
 }
 
 /*es 8*/
-.ex-8-img{
+
+.ex-8-img {
   transition: all 2s;
 }
 
-.ex-8-img:hover{
+.ex-8-img:hover {
   filter: grayscale(0.5) sepia(0.5);
   border-radius: 20px;
 }
 
 /*es 9*/
-.ex-9-img{
-  transition:  all 2s;
+
+.ex-9-img {
+  transition: all 2s;
 }
 
-.ex-9-img:hover{
-  margin: 0;
-  width: 500px;
-  height: 100%;
+.ex-9-img:hover {
+  transform: scale(1.5, 1.5);
   border-radius: 20px;
   filter: grayscale(0.5) sepia(0.5);
 }
 
 /*es 10*/
-.ex-10-icon{
+
+.ex-10-icon {
   animation-name: spin;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 
-@keyframes spin{
-  0% {transform: rotate(360deg)}
-  100% {transform: rotate(0deg)}
+@keyframes spin {
+  0% {
+    transform: rotate(360deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
 }
 
 /*es 11*/
-.ex-11-icon:hover{
+
+.ex-11-icon:hover {
   animation: three-fourths 2s
 }
 
-@keyframes three-fourths{
-  0%{transform: rotate(0deg)}
-  75%{transform: rotate(270deg)}
-  100%{transform: rotate(0deg)}
+@keyframes three-fourths {
+  0% {
+    transform: rotate(0deg)
+  }
+  75% {
+    transform: rotate(270deg)
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+
+/*es 12*/
+
+.ex-12-button:hover .ex-12-top-white {
+  animation: ex-12-top 2s
+}
+
+@keyframes ex-12-top {
+  0% {
+    left: 10%
+  }
+  50% {
+    left: 60%
+  }
+  100% {
+    left: 10%
+  }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: ex-12-bot 2s
+}
+
+@keyframes ex-12-bot {
+  0% {
+    right: 20%
+  }
+  50% {
+    right: 60%
+  }
+  100% {
+    right: 20%
+  }
+}
+
+/*es 13*/
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: ex-13-top 3s
+}
+
+@keyframes ex-13-top {
+  0%{
+    left: 10%;
+  }
+  20% {
+    left: 100%
+  }
+  40% {
+    left: 100%;
+    top: 100%
+  }
+  60% {
+    top: 100%;
+    right: 100%
+  }
+  80% {
+    right: 100%;
+    bottom: 100%
+  }
+  100% {
+    bottom: 100%;
+    left: 10%
+  }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: ex-13-bot 3s
 }
