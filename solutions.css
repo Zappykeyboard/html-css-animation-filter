@@ -97,15 +97,14 @@
   animation-name: spin;
   animation-duration: 1s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes spin {
   0% {
     transform: rotate(360deg)
   }
-  100% {
-    transform: rotate(0deg)
-  }
+  
 }
 
 /*es 11*/
@@ -167,27 +166,12 @@
 }
 
 @keyframes ex-13-top {
-  0%{
-    left: 10%;
-  }
+
   20% {
-    left: 100%
+    left: 90%;
   }
-  40% {
-    left: 100%;
-    top: 100%
-  }
-  60% {
-    top: 100%;
-    right: 100%
-  }
-  80% {
-    right: 100%;
-    bottom: 100%
-  }
-  100% {
-    bottom: 100%;
-    left: 10%
+  40%{
+    top:100%;
   }
 }
 
